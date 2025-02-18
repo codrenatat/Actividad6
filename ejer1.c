@@ -12,7 +12,6 @@
 
 int mat[SIZE][SIZE];
 
-// Pasar datos a los hilos
 typedef struct {
     int start_row;
     int end_row;
@@ -32,7 +31,6 @@ int main() {
     ThreadData thread_data[NUM_THREADS];
     int i;
 
-    // Inicializa la matriz con números al azar
     initmat(mat);
 
     gettimeofday(&ts, NULL);
